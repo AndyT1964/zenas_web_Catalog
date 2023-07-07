@@ -7,9 +7,6 @@ import pandas
 
 streamlit.title('Zena\'s Amazing Athleisure Catalog')
 
-streamlit.text("Hello from Snowflake:")
-streamlit.text(my_data_row)
-
 # connect to snowflake
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
